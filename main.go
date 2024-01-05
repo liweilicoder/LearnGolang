@@ -1,11 +1,8 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
-	fmt.Println("==Main function start==")
+	//fmt.Println("==Main function start==")
 
-	dupFile()
+	//dup3()
+	lissajousIn()
 }
