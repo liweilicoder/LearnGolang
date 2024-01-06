@@ -5,5 +5,5 @@ func main() {
 
 	//dup3()
 	//lissajousIn()
-	fetch()
+	fetchall()
 }
