@@ -6,6 +6,6 @@ func main() {
 	//dup3()
 	//lissajousIn()
 	//fetchall()
-	fetch()
-	//server()
+	//fetch()
+	server4()
 }
