@@ -1,4 +1,4 @@
-package main
+package ch1
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-func fetchall() {
+func Fetchall() {
 	start := time.Now()
 	ch := make(chan string)
 

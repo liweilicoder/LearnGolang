@@ -1,4 +1,4 @@
-package main
+package ch1
 
 import (
 	"image"
@@ -20,7 +20,7 @@ const (
 	blackIndex = 1
 )
 
-func lissajousIn() {
+func LissajousIn() {
 	rand.Seed(time.Now().UTC().UnixNano())
 	if len(os.Args) > 1 && os.Args[1] == "web" {
 		handler := func(w http.ResponseWriter, r *http.Request) {

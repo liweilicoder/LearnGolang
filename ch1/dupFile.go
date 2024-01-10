@@ -1,4 +1,4 @@
-package main
+package ch1
 
 import (
 	"bufio"
@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func dupFile() {
+func DupFile() {
 	counts := make(map[string]int)
 	files := os.Args[1:]
 	if (len(files)) == 0 {

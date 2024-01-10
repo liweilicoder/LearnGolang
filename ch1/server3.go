@@ -1,4 +1,4 @@
-package main
+package ch1
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func server3() {
+func Server3() {
 	http.HandleFunc("/help", handler3)
 	log.Fatal(http.ListenAndServe("localhost:8001", nil))
 }

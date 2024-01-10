@@ -1,4 +1,4 @@
-package main
+package ch1
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func dup3() {
+func Dup3() {
 	counts := make(map[string]int)
 	for _, filename := range os.Args[1:] {
 		data, err := ioutil.ReadFile(filename)

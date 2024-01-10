@@ -1,4 +1,4 @@
-package main
+package ch1
 
 import (
 	"bufio"
@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func dup() {
+func Dup() {
 	counts := make(map[string]int)
 	input := bufio.NewScanner(os.Stdin)
 

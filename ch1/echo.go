@@ -1,5 +1,5 @@
 // print the command line args
-package main
+package ch1
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func echo() {
+func Echo() {
 	fmt.Println(strings.Join(os.Args[1:], ","))
 	fmt.Println(os.Args[1:])
 }
