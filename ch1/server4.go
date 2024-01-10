@@ -1,11 +1,11 @@
-package main
+package ch1
 
 import (
 	"log"
 	"net/http"
 )
 
-func server4() {
+func Server4() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		lissajous(w)
 	})

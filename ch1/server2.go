@@ -1,4 +1,4 @@
-package main
+package ch1
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 var mu sync.Mutex
 var count int
 
-func server2() {
+func Server2() {
 	http.HandleFunc("/help", handler2)
 	http.HandleFunc("/count", counter2)
 	log.Fatal(http.ListenAndServe("localhost:8001", nil))
