@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/liweilicoder/LearnGolang/ch2"
+	"github.com/liweilicoder/LearnGolang/ch3"
 )
 
 func main() {
@@ -19,7 +17,5 @@ func main() {
 	// 	fmt.Printf("%s = %s, %s = %s\n", f, ch2.FToC(f), c, ch2.CToF(c))
 	// }
 
-	var x uint64
-	fmt.Scan(&x)
-	fmt.Println(ch2.Popcount(x))
+	ch3.ServerSVG()
 }
