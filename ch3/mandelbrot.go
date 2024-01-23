@@ -4,20 +4,11 @@ import (
 	"image"
 	"image/color"
 	"image/png"
-	"io"
-	"log"
 	"math/cmplx"
-	"net/http"
+	"os"
 )
 
-func ServerMandlbrot() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		mandlbrot(w)
-	})
-	log.Fatal(http.ListenAndServe("localhost:8002", nil))
-}
-
-func mandlbrot(w io.Writer) {
+func Mandlbrot() {
 	const (
 		xmin, ymin, xmax, ymax = -2, -2, +2, +2
 		width, height          = 1024, 1024
@@ -32,7 +23,7 @@ func mandlbrot(w io.Writer) {
 			img.Set(px, py, mandlbrotImpl(z))
 		}
 	}
-	png.Encode(w, img)
+	png.Encode(os.Stdout, img)
 }
 
 func mandlbrotImpl(z complex128) color.Color {

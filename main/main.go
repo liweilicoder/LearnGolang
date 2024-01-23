@@ -17,5 +17,5 @@ func main() {
 	// 	fmt.Printf("%s = %s, %s = %s\n", f, ch2.FToC(f), c, ch2.CToF(c))
 	// }
 
-	ch3.ServerMandlbrot()
+	ch3.Mandlbrot()
 }
