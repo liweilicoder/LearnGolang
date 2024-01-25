@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/liweilicoder/LearnGolang/ch3"
 )
 
@@ -17,5 +19,5 @@ func main() {
 	// 	fmt.Printf("%s = %s, %s = %s\n", f, ch2.FToC(f), c, ch2.CToF(c))
 	// }
 
-	ch3.Mandlbrot()
+	fmt.Println(ch3.IntsToString([]int{1, 2, 2, 2, 2, 2, 1111111111}))
 }
